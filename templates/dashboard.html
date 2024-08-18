@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h2>Welcome to the Flashcard App</h2>
+        <button id="startButton">Start</button>
+        <button id="resetButton" style="display:none;">RESET</button>
+        <div id="flashcards" style="display:none;">
+            <div id="flashcard" class="flashcard">
+                <p id="phrase"></p>
+                <p id="translation" style="display:none;"></p>
+            </div>
+            <button id="prevButton">Previous</button>
+            <button id="nextButton">Next</button>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
